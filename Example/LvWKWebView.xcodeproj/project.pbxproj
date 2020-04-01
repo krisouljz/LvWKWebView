@@ -38,10 +38,10 @@
 
 /* Begin PBXFileReference section */
 		2B7E345FAAA6377626DBB30E /* Pods-LvWKWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LvWKWebView_Example.debug.xcconfig"; path = "Target Support Files/Pods-LvWKWebView_Example/Pods-LvWKWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		30D8758E38A67D6F1FB42F88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		30D8758E38A67D6F1FB42F88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3404AD474C221A0A1C74E9DF /* Pods-LvWKWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LvWKWebView_Tests.release.xcconfig"; path = "Target Support Files/Pods-LvWKWebView_Tests/Pods-LvWKWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4C217E21206807BF7A1E104A /* Pods-LvWKWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LvWKWebView_Example.release.xcconfig"; path = "Target Support Files/Pods-LvWKWebView_Example/Pods-LvWKWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		53C6A5893C08C66B0662A479 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		53C6A5893C08C66B0662A479 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LvWKWebView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LvWKWebView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6F678929E25B2DACA2FA52FC /* Pods_LvWKWebView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LvWKWebView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7AB22366E2D123E1818DB469 /* LvWKWebView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LvWKWebView.podspec; path = ../LvWKWebView.podspec; sourceTree = "<group>"; };
+		7AB22366E2D123E1818DB469 /* LvWKWebView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LvWKWebView.podspec; path = ../LvWKWebView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC005ECD1E03ECA4712ECE06 /* Pods-LvWKWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LvWKWebView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LvWKWebView_Tests/Pods-LvWKWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F707E77162130E6E28915AA7 /* Pods_LvWKWebView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LvWKWebView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				BC005ECD1E03ECA4712ECE06 /* Pods-LvWKWebView_Tests.debug.xcconfig */,
 				3404AD474C221A0A1C74E9DF /* Pods-LvWKWebView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +302,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LvWKWebView_Example/Pods-LvWKWebView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/LvHttpManager/LvHttpManager.framework",
 				"${BUILT_PRODUCTS_DIR}/LvWKWebView/LvWKWebView.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LvHttpManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LvWKWebView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

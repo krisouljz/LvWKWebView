@@ -1,0 +1,53 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CTMediator (28)
+  - LvHttpManager (0.1.0):
+    - AFNetworking
+    - CTMediator
+  - LvWKWebView (0.1.0):
+    - LvHttpManager
+    - MBProgressHUD
+    - WebViewJavascriptBridge
+  - MBProgressHUD (1.2.0)
+  - WebViewJavascriptBridge (6.0.3)
+
+DEPENDENCIES:
+  - LvWKWebView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CTMediator
+    - LvHttpManager
+    - MBProgressHUD
+    - WebViewJavascriptBridge
+
+EXTERNAL SOURCES:
+  LvWKWebView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CTMediator: 6a05e9f1098b2d2fbc9d19cc7f28e94c3a08b5d2
+  LvHttpManager: e42270c7343256547ea03f1f5b73c5fad02bb2f5
+  LvWKWebView: 752902a05c7b598ada2933a2a16035706305cfe3
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+
+PODFILE CHECKSUM: ee4204a7ed7023c1d9a956a8fdab219278ab4f64
+
+COCOAPODS: 1.9.1
